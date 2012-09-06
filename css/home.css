@@ -1,0 +1,419 @@
+/*
+    Document  : Frontpage
+    Author    : Nominal, Aaron
+	Theme     : Metro
+    Date      : July 24th, 2012
+*/
+
+body {
+background:#EFEFEF;
+font-family:'Segoe UI';
+height:100%;
+}
+body, body * {
+margin:0;
+padding:0;
+}
+a {
+color:inherit;
+text-decoration:none;
+}
+*:focus {
+outline:none;
+}
+@font-face {
+font-family:'Segoe UI';
+src:url('../font/segoeui.eot?') format('eot'),
+url('../font/segoeui.ttf') format('truetype');
+}
+@font-face {
+font-family:'Segoe UI Light';
+src:url('../font/segoeuil.eot?') format('eot'),
+url('../font/segoeuil.ttf') format('truetype');
+}
+div::-webkit-scrollbar {  
+width:8px;
+background:#E5E5E5;
+}  
+div::-webkit-scrollbar-thumb {
+background:#CCCCCC;
+}
+div.wrapper {
+width:960px;
+height:auto;
+background:#fff;
+position:absolute;
+left:50%;
+bottom:0;
+top:40px;
+margin:0 0 0 -480px;
+clear:both;
+}
+div.barline {
+width:100%;
+height:40px;
+background:#333;
+position:relative;
+z-index:10;
+overflow:hidden;
+}
+div.barline > a > span.joinnow {
+height:15px;
+width:938px;
+position:absolute;
+top:13px;
+left:50%;
+text-transform:uppercase;
+color:#CCC;
+font-size:11px;
+background:url('../img/frontpage/joinnow_arrow.png') no-repeat;
+padding:0 0 0 22px;
+margin:0 0 0 -480px;
+}
+div.barline > a > span.joinnow:hover {
+color:#FFF;
+background:url('../img/frontpage/joinnow_arrow_over.png') no-repeat;
+}
+div.barline > a > span.logo {
+width:65px;
+height:38px;
+overflow:hidden;
+position:absolute;
+top:1px;
+left:50%;
+background:url('../img/logo_small.png') no-repeat;
+margin:0 0 0 410px;
+z-index:10;
+}
+div.barline > a > span.online {
+height:15px;
+overflow:hidden;
+position:absolute;
+top:13px;
+left:50%;
+color:#CCC;
+font-size:11px;
+text-transform:uppercase;
+margin:0 0 0 365px;
+z-index:10;
+}
+div.barline > .content {
+width:960px;
+height:170px;
+margin:40px auto 0 auto;
+}
+div#homebox {
+width:235px;
+height:250px;
+margin:0 10px 0 30px;
+background:#000;
+display:inline-block;
+vertical-align: top;
+}
+div#homebox > .container {
+width:240px;
+height:250px;
+list-style-type:none;
+position:relative;
+color:#fff;
+}
+div#homebox > .container > .container-content > .body {
+width:600px;
+height:20px;
+margin:0 0 -3px 0;
+display:block;
+font-size:13px;
+font-family:Segoe UI;
+position:absolute;
+left:20px;
+top:28px;
+}
+div#homebox > .container > .container-content > .title {
+width:600px;
+height:20px;
+margin:0 0 -3px 0;
+display:block;
+font-size:18px;
+font-family:Segoe UI;
+position:absolute;
+left:20px;
+top:8px;
+}
+div#homebox > .container > .container-content > .avatar {
+width:600px;
+height:140px;
+margin:0 0 -3px 0;
+padding:2px 0 0 18px;
+display:block;
+position:absolute;
+left:20px;
+bottom:38px;
+background:url('../img//home/spotlight_sticker_002.gif') no-repeat;
+}
+div#homebox > .container > .container-content > .image {
+width:600px;
+height:140px;
+margin:0 0 -3px 0;
+padding:2px 0 0 18px;
+display:block;
+position:absolute;
+left:20px;
+bottom:38px;
+}
+div#homebox > .container > .container-content > .info {
+width:600px;
+height:22px;
+display:block;
+position:absolute;
+left:20px;
+bottom:10px;
+}
+div#homebox > .container > .container-content > .info > .credits {
+margin:0 15px 0 0;
+line-height:13px;
+padding:3px 0 3px 22px;
+display:inline-block;
+background:url('../img//icons/credit.png') no-repeat;
+}
+div#homebox > .container > .container-content > .info > .pixels {
+margin:0 15px 0 0;
+line-height:13px;
+padding:3px 0 3px 22px;
+display:inline-block;
+background:url('../img//icons/pixel.png') no-repeat;
+}
+div#homebox > .container > div.link > a {
+width:110px;
+height:32px;
+background:#000;
+position:absolute;
+right:30px;
+bottom:25px;
+text-align:center;
+line-height:31px;
+color:#fff;
+text-decoration:none;
+}
+div#homebox > .container > div.link:hover > a {
+background:#fff;
+color:#000;
+}
+div#homebox > .container > div.link > a > span.arrow {
+color:#7AA151;
+font-family:wingdings;
+font-size:13px;
+}
+div#slider {
+width:650px;
+height:250px;
+margin:0 30px 0 0;
+background:#000;
+display:inline-block;
+overflow:hidden;
+}
+div#slider > .article {
+width:650px;
+height:250px;
+list-style-type:none;
+position:relative;
+color:#fff;
+}
+div#slider > #buttons {
+position:absolute;
+z-index:10;
+padding:20px 0 0 30px;
+}
+div#slider > #buttons > a{
+width:10px;
+height:10px;
+text-indent:-99999px;
+overflow:hidden;
+background:#B5B5B5;
+border-radius:100%;
+-webkit-border-radius:100%;
+display:inline-block;
+cursor:pointer
+}
+div#slider > #buttons .selected{
+background:#fff;
+}
+div#slider > #buttons > a :hover{
+background:#fff;
+}
+div#slider > .article > .article-content > .body {
+width:600px;
+height:40px;
+position:absolute;
+left:30px;
+bottom:25px;
+font-size:31px;
+font-family:Segoe UI Light;
+display:block;
+}
+div#slider > .article > .article-content > .title {
+width:600px;
+height:20px;
+margin:0 0 -3px 0;
+display:block;
+font-size:16px;
+font-family:Segoe UI;
+position:absolute;
+left:30px;
+bottom:65px;
+}
+div#slider > .article > div.link > a {
+width:110px;
+height:32px;
+background:#000;
+position:absolute;
+right:30px;
+bottom:25px;
+text-align:center;
+line-height:31px;
+color:#fff;
+text-decoration:none;
+}
+div#slider > .article > div.link:hover > a {
+background:#fff;
+color:#000;
+}
+div#slider > .article > div.link > a > span.arrow {
+color:#7AA151;
+font-family:wingdings;
+font-size:13px;
+}
+div.adContainer {
+position:relative;
+width:728px;
+height:90px;
+display:block;
+margin:5px auto;
+}
+div.footer {
+width:900px;
+height:100px;
+margin:30px auto;
+display:block;
+text-align:center;
+font-size:12px;
+}
+div.MainNavigation {
+height:15px;
+width:938px;
+position:absolute;
+top:13px;
+left:50%;
+text-transform:uppercase;
+color:#CCC;
+font-size:11px;
+padding:0 0 0 22px;
+margin:0 0 0 -480px;
+}
+div.MainNavigation > div.Option {
+display:inline-block;
+margin:0 14px 0 0;
+}
+div.SubNavigation {
+display:inline-block;
+width:770px;
+height:auto;
+margin:0 30px 10px 30px;
+line-height:60px;
+font-size:20px;
+font-family:Segoe UI Light;
+color:#000;
+text-align:left;
+}
+div.SubNavigation > div.Option {
+display:inline-block;
+margin:0 14px 0 0;
+}
+div.HotelNavigation {
+display:inline-block;
+width:auto;
+height:auto;
+margin:0 0 10px 0;
+line-height:60px;
+font-size:20px;
+font-family:Segoe UI Light;
+color:#000;
+text-align:left;
+}
+div#contentbox {
+width:650px;
+margin:0 30px 0 0;
+background:#000;
+display:inline-block;
+color:#fff;
+vertical-align: top;
+}
+div#contentbox > .container {
+width:650px;
+height:250px;
+list-style-type:none;
+position:relative;
+overflow-y:scroll;
+}
+div#contentbox > .container > .title {
+width:600px;
+height:40px;
+position:absolute;
+left:30px;
+top:10px;
+font-size:31px;
+font-family:Segoe UI Light;
+display:block;
+}
+div#contentbox > .container > .content {
+position:absolute;
+left:30px;
+top:60px;
+width:600px;
+height:auto;
+display:block;
+}
+div#contentbox > .container > .content > .item {
+width:600px;
+height:20px;
+display:block;
+font-size:16px;
+font-family:Segoe UI;
+margin:0 0 10px 0;
+cursor:pointer;
+}
+div#contentbox > .title {
+width:600px;
+height:40px;
+font-size:31px;
+font-family:Segoe UI Light;
+display:block;
+padding:0 0 5px 10px;
+}
+div#contentbox > .content > .furni {
+display:block;
+font-size:12px;
+font-family:Segoe UI;
+min-height:90px;
+padding-left:10px;
+}
+div#contentbox > .content > .furni > div {
+display:inline-block;
+max-width:500px;
+}
+div#contentbox > .content > .furni > .image {
+float:left;
+padding-right:10px;
+width:80px;
+text-align:center;
+}
+div#contentbox > .content > .furni > .motto {
+min-width:200px;
+}
+div#contentbox > .content > .furni > .image > img {
+max-height:80px;
+max-width:80px;
+}
+div#contentbox > .content > .furni > .name {
+text-transform:uppercase;
+font-weight:bold;
+}
